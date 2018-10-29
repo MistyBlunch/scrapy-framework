@@ -1,0 +1,685 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.ck.get=function(e,n){null!==n&&(e=e+"_"+n);for(var o=e+"=",t=decodeURIComponent(document.cookie).split(";"),i=0;i<t.length;i++){for(var c=t[i];" "===c.charAt(0);)c=c.substring(1);if(0===c.indexOf(o))return c.substring(o.length,c.length)}return""},__ez.ck.setByCat=function(e,n){if("undefined"!=typeof cmpIsOn){if(null!=n){var o=__ez.ck.get("ezCMPCookieConsent",null);-1!==(o=o.substring(1,o.length)).indexOf(n+"=1")?document.cookie=e:""===o&&"undefined"!=typeof cmpCookies&&(void 0===cmpCookies[n]&&(cmpCookies[n]=[]),cmpCookies[n].push(e))}}else document.cookie=e};__ez.queue=function(){var e=0,i=0,t=[],n=[],r=[],o=!0,s={func:function(e,i,n,r,o,s,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=r,this.blockedBy=o,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.process=function(){c("... func = "+e),l.isInitialized=!0,l.isComplete=!0;var i=l.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[l.funcName].apply(null,this.parameters)),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(c("----- F'D: "+l.name),d())}},file:function(e,i,t,n,r,o,s){var a=this;this.name=e,this.path=i,this.async=r,this.defer=o,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.process=function(){a.isInitialized=!0,c("... file = "+e);var t=document.createElement("script");t.src=i,!0===r?t.async=!0:!0===o&&(t.defer=!0),t.onerror=function(){c("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&d()},t.onreadystatechange=t.onload=function(){var e=t.readyState;c("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&d())},document.getElementsByTagName("head")[0].appendChild(t)}}};function a(e){!0!==l(e)&&0!=o&&e.process()}function l(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var n=e.blockedBy[i];if(!1===t.hasOwnProperty(n))return c(e.name+" blocked = "+n),!0;if(!0===e.proceedIfError&&!0===t[n].isError)return!1;if(!1===t[n].isComplete)return c(e.name+" blocked = "+n),!0}return!1}function c(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function d(){++e>200||(c("let's go"),h(n),h(r))}function h(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||l(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?c(t.name+": error"):!0===t.isComplete?c(t.name+": complete already"):!0===t.isInitialized&&c(t.name+": initialized already"):t.process()}}return{addFile:function(e,i,o,l,c,d,h,f){var u=new s.file(e,i,o,l,c,d,h);!0===f?n[e]=u:r[e]=u,t[e]=u,a(u)},addFunc:function(e,o,l,c,d,h,f,u,p){!0===h&&(e=e+"_"+i++);var m=new s.func(e,o,l,c,d,f,u);!0===p?n[e]=m:r[e]=m,t[e]=m,a(m)},items:t,processAll:d,setallowLoad:function(e){o=e}}}();var __ezDotData=function(e,r){this.name=e,this.val=r};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var r,t,n,o,a,i,d,_="",f=0;for(e=Base64._utf8_encode(e);f<e.length;)o=(r=e.charCodeAt(f++))>>2,a=(3&r)<<4|(t=e.charCodeAt(f++))>>4,i=(15&t)<<2|(n=e.charCodeAt(f++))>>6,d=63&n,isNaN(t)?i=d=64:isNaN(n)&&(d=64),_=_+this._keyStr.charAt(o)+this._keyStr.charAt(a)+this._keyStr.charAt(i)+this._keyStr.charAt(d);return _},decode:function(e){var r,t,n,o,a,i,d="",_=0;for(e=e.replace(/[^A-Za-z0-9+/=]/g,"");_<e.length;)r=this._keyStr.indexOf(e.charAt(_++))<<2|(o=this._keyStr.indexOf(e.charAt(_++)))>>4,t=(15&o)<<4|(a=this._keyStr.indexOf(e.charAt(_++)))>>2,n=(3&a)<<6|(i=this._keyStr.indexOf(e.charAt(_++))),d+=String.fromCharCode(r),64!=a&&(d+=String.fromCharCode(t)),64!=i&&(d+=String.fromCharCode(n));return d=Base64._utf8_decode(d)},_utf8_encode:function(e){e=e.replace(/rn/g,"n");for(var r="",t=0;t<e.length;t++){var n=e.charCodeAt(t);n<128?r+=String.fromCharCode(n):(127<n&&n<2048?r+=String.fromCharCode(n>>6|192):(r+=String.fromCharCode(n>>12|224),r+=String.fromCharCode(n>>6&63|128)),r+=String.fromCharCode(63&n|128))}return r},_utf8_decode:function(e){for(var r="",t=0,n=c1=c2=0;t<e.length;)(n=e.charCodeAt(t))<128?(r+=String.fromCharCode(n),t++):191<n&&n<224?(c2=e.charCodeAt(t+1),r+=String.fromCharCode((31&n)<<6|63&c2),t+=2):(c2=e.charCodeAt(t+1),c3=e.charCodeAt(t+2),r+=String.fromCharCode((15&n)<<12|(63&c2)<<6|63&c3),t+=3);return r}},__ez.dot.dataToStr=function(e){if(void 0===e)return[];try{for(var r in e)e[r].val=e[r].val+""}catch(e){}return e},__ez.dot.getCC=function(){var e="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(e=_ezaq.country),e},__ez.dot.getDID=function(){var e="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e=_ezaq.domain_id.toString()),e},__ez.dot.getEpoch=function(e){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(e=_ezaq.t_epoch),e},__ez.dot.getPageviewId=function(){var e="";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("page_view_id")&&(e=_ezaq.page_view_id),e},__ez.dot.getURL=function(e){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(e="//g.ezoic.net"+e),e},__ez.dot.isValid=function(e){for(var r=0;r<e.length;r++)if(e[r]instanceof __ezDotData==!1)return console.error("Invalid data. ",e[r]),!1;return!0},__ez.dot.isDefined=function(){for(var e=0;e<arguments.length;e++)if(void 0===arguments[e]||null===arguments[e])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){var p=[],i="/porpoiseant/army.gif";function t(e,i,t,d,o,_,n){if(__ez.dot.isDefined(e,e.getSlotElementId)){var a=parseInt(e.getTargeting("ap")[0]),r=function(e){var i=0;try{var t=e.getTargetingMap(),d=e.getSlotElementId();if(-1===d.indexOf("div-gpt-ad"))return i;if(void 0!==t)for(var o in t)if(-1!==o.indexOf("iid")&&void 0!==t[o][0]){i=t[o][0];break}}catch(e){}return i}(e),s=e.getSlotElementId(),g=parseInt(e.getTargeting("compid")[0]);__ez.dot.isDefined(r,s)&&__ez.dot.isValid(i)&&p.push({type:"impression",impression_id:r,domain_id:__ez.dot.getDID(),unit:s,t_epoch:__ez.dot.getEpoch(0),revenue:t,est_revenue:d,ad_position:a,ad_size:"",bid_floor_filled:o,bid_floor_prev:_,stat_source_id:n,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:g,data:__ez.dot.dataToStr(i)})}}function d(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(p)&&0<p.length){var e=__ez.dot.getURL(i)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(p));void 0!==window.isAmp&&isAmp&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e+="&visit_uuid="+_ezaq.visit_uuid),(new Image).src=e}p=[]}}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),d()},AddById:function(e,i){var t=e.split("/");if(__ez.dot.isDefined(e)&&3===t.length&&__ez.dot.isValid(i)){var d=t[0],o=t[2];p.push({type:"impression",impression_id:o,domain_id:__ez.dot.getDID(),unit:d,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(i)})}},Fire:d}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&!0===ezJsu||"undefined"!=typeof _ez_sa&&!0===_ez_sa||void 0!==window.isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(i,e){this.name=i,this.val=e};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(i,e){this.AddImpPixel(i,e,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(i,e){this.AddPVPixel(i,e),this.FirePixels()},AddImpPixel:function(i,e,t,n,o,a,r){if(this.isDefined(i,i.getSlotElementId)){var d=parseInt(i.getTargeting("ap")[0]),s=i.getSizes()[0],p=s.l.toString()+"x"+s.j.toString(),l="0",h="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(l=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(h=_ezaq.country);var f=this.getSlotIID(i),c=i.getSlotElementId();this.isDefined(f,c)&&this.validateData(e)&&(e=this.convertDataToStr(e),this.pixels.push({type:"impression",impression_id:f,domain_id:l,unit:c,t_epoch:this.tEpoch,revenue:t,est_revenue:n,ad_position:d,ad_size:p,bid_floor_filled:o,bid_floor_prev:a,stat_source_id:r,country_code:h,data:e}))}},AddImpPixelById:function(i,e){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString());var n=i.split("/");if(this.isDefined(i)&&3===n.length&&this.validateData(e)){var o=n[0],a=n[2];e=this.convertDataToStr(e),this.pixels.push({type:"impression",impression_id:a,domain_id:t,unit:o,t_epoch:this.tEpoch,data:e})}},AddPVPixel:function(i,e){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString()),this.isDefined(i)&&this.validateData(e)&&(e=this.convertDataToStr(e),this.pixels.push({type:"pageview",pageview_id:i,domain_id:t,t_epoch:this.tEpoch,data:e}))},FirePixels:function(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(!0===__ez.template.isOrig?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(i,e){return new EzoicPixelData(i,e)},convertDataToStr:function(i){if(void 0===i)return[];try{for(var e in i)i[e].val=i[e].val+""}catch(i){}return i},getSlotIID:function(i){var e=0;try{var t=i.getTargetingMap();if(-1===i.getSlotElementId().indexOf("div-gpt-ad"))return e;if(void 0!==t)for(var n in t)if(-1!==n.indexOf("iid")&&void 0!==t[n][0]){e=t[n][0];break}}catch(i){}return e},isDefined:function(){for(var i=0;i<arguments.length;i++)if(void 0===arguments[i]||null===arguments[i])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(i){for(var e=0;e<i.length;e++)if(i[e]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",i[e]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[{"SlotName":"/1254144/datosperu_org-box-3","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":5,"Floor":100},{"DealId":6,"Floor":50}]},{"SlotName":"/1254144/datosperu_org-box-2","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":5,"Floor":100},{"DealId":6,"Floor":50}]},{"SlotName":"/1254144/datosperu_org-medrectangle-3","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":5,"Floor":100},{"DealId":6,"Floor":50}]}];
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/porpoiseant/dall2.js" async></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
+
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=2500,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[{code: 'div-gpt-ad-datosperu_org-box-3-0', sizes: [[300,250],[580,400],[336,280]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660707' }},{bidder: 'aol',params: { placement: '', network: '10765.1' }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '1263523' }},{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'Ezoic_300x250@300x250' }}] },{code: 'div-gpt-ad-datosperu_org-box-2-0', sizes: [[970,90],[728,90]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660801' }},{bidder: 'aol',params: { placement: '4308144', network: '10765.1' }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '1248508' }},{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'Ezoic_728x90@728x90' }}] },{code: 'div-gpt-ad-datosperu_org-medrectangle-3-0', sizes: [[728,90]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660801' }},{bidder: 'aol',params: { placement: '4308144', network: '10765.1' }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }},{bidder: 'criteo', params: { zoneId: '1248508' }},{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'Ezoic_728x90@728x90' }}] }];var priceBuckets={"buckets":[{"precision":2,"min":0,"max":5,"increment":0.01},{"precision":2,"min":5,"max":50,"increment":0.10},{"precision":2,"min":50,"max":120,"increment":5.00}]};epbjs.setConfig({priceGranularity:priceBuckets});epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'oftmedia');epbjs.SS={"aol":10028,"criteo":10050,"oftmedia":10081,"pubmatic":10061,"sonobi":10048},epbjs.bidderSettings={oftmedia: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.900000; var adj2 = adj1 * 1.300000; return adj2; }},aol: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.910000; var adj2 = adj1 * 1.300000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.700000; var adj2 = adj1 * 1.300000; return adj2; }},criteo: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.300000; return adj2; }},pubMatic: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.300000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){return e.pbCg;}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder.toLowerCase()]?epbjs.SS[e.bidder.toLowerCase()]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder.toLowerCase()]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder.toLowerCase()],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi","criteo","ix","cox","audienceNetwork","pubmatic","rubicon","gumgum","oftmedia"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.300000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.fastLoadAuctionEnd = true; epbjs.setTargetingForGPTAsync()}})});
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;window.ezoViewCheck = false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+googletag.cmd.push(function() {googletag.destroySlots();if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/datosperu_org-box-3',[580,400],'div-gpt-ad-datosperu_org-box-3-0').addService(googletag.pubads()).setTargeting('iid13','1240326').setTargeting('t','134').setTargeting('d','68254').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1109').setTargeting('sap','1109').setTargeting('a','|2|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod21').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','0').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','2').setTargeting('al','1002').setTargeting('compid','0').setTargeting('tap','datosperu_org-box-3-1240326').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','900').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[21,22,23,24,25,26,27,28,29,30]);ezslot_0.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','5933332317').set('adsense_link_color','37a5d7').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/datosperu_org-box-2',[970,90],'div-gpt-ad-datosperu_org-box-2-0').addService(googletag.pubads()).setTargeting('iid13','1201169').setTargeting('t','134').setTargeting('d','68254').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|2|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod21').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','datosperu_org-box-2-1201169').setTargeting('bv','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','1000').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[21,22,23,24,25,26,27,28,29,30]);ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','5933332317').set('adsense_link_color','37a5d7').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";ezslot_2 = googletag.defineSlot('/1254144/datosperu_org-medrectangle-3',[728,90],'div-gpt-ad-datosperu_org-medrectangle-3-0').addService(googletag.pubads()).setTargeting('iid13','1223976').setTargeting('t','134').setTargeting('d','68254').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1126').setTargeting('sap','1126').setTargeting('a','|5|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod21').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','2').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','8').setTargeting('al','1021').setTargeting('compid','0').setTargeting('tap','datosperu_org-medrectangle-3-1223976').setTargeting('bv','14').setCollapseEmptyDiv(false).setTargeting('br1','950').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[21,22,23,24,25,26,27,28,29,30]);ezslot_2.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','5933332317').set('adsense_link_color','20929A').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[2]="2";}else{window.ezHideLocations=[];window.ezHideLocations.push('div-gpt-ad-datosperu_org-box-3-0');ezslot_1 = googletag.defineSlot('/1254144/datosperu_org-box-2',[970,90],'div-gpt-ad-datosperu_org-box-2-0').addService(googletag.pubads()).setTargeting('iid13','1201169').setTargeting('t','134').setTargeting('d','68254').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|2|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod21').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','datosperu_org-box-2-1201169').setTargeting('bv','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','1000').setTargeting('br2','0').setTargeting('ezoic','1').setTargeting('deal1',[21,22,23,24,25,26,27,28,29,30]);ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','5933332317').set('adsense_link_color','37a5d7').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";window.ezHideLocations.push('div-gpt-ad-datosperu_org-medrectangle-3-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { __ez.queue.addFunc("ezvbc", "ezvbc", event, false, ['banger.js'], true, true, false, true); });googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_1");ezslots.push("ezslot_2");}else{ezslots.push("ezslot_1");}</script>
+<script>(function(){function a(g,h,i){var j=new Date;j.setTime(j.getTime()+1e3*(60*(60*(24*i))));var k="expires="+j.toUTCString(),l=g+"="+h+";"+k+";path=/;";"undefined"!=typeof ezdomain&&(l+="domain="+ezdomain),document.cookie=l}var b=window.addEventListener?"addEventListener":"attachEvent",c=window[b],f="attachEvent"==b?"onmessage":"message";c(f,function(g){"undefined"!=typeof g.data.ezstatus&&(__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("dg",g.data.ezstatus)]),a("ezdg",g.data.ezstatus,730))})})();</script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":2,"ad_location_ids":"2,1,21","ad_transform_level":0,"adx_ad_count":3,"bidder_version":3,"city":"Lima","country":"PE","days_since_last_visit":-1,"display_ad_count":3,"domain_id":68254,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":1,"forensiq_score":-1,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","is_from_recommended_pages":false,"is_return_visitor":false,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":3,"metro_code":0,"page_ad_positions":"1103,1109,1126","page_view_count":0,"page_view_id":"e36c3a3d-ab1a-4658-52c1-1cd382290435","position_selection_id":16,"postal_code":"","pv_event_count":0,"response_time_orig":969,"serverid":"18.231.164.47:8827","state":"LMA","sub_page_ad_positions":"1103,1109,1126","t_epoch":1540753820,"template_id":134,"time_on_site_visit":0,"url":"https://www.datosperu.org/","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":332};var _ezim_d = {"datosperu_org-box-2":{"adx_ad_count":3,"full_id":"datosperu_org-box-2/2018-10-28/1201169","height":"90","position_id":1103,"sub_position_id":1103,"width":"970"},"datosperu_org-box-3":{"adx_ad_count":3,"full_id":"datosperu_org-box-3/2018-10-28/1240326","height":"400","position_id":1109,"sub_position_id":1109,"width":"580"},"datosperu_org-medrectangle-3":{"adx_ad_count":3,"full_id":"datosperu_org-medrectangle-3/2018-10-28/1223976","height":"90","position_id":1126,"sub_position_id":1126,"width":"728"}};var _ezat = {"domain_id":68254,"form_factor_id":1,"framework_id":1,"pageview_date":"2018-10-28","pageview_id":"e36c3a3d-ab1a-4658-52c1-1cd382290435","template_id":134,"url":"https://www.datosperu.org/","visit_uuid":"83700abc-eabc-4beb-5d88-b43b10990b60"};</script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('rochester.js', '/detroitchicago/rochester.js?cb=178-0&v=8', false, [], true, false, true, true);</script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=178-0&bv=2&v=4&PageSpeed=off', true, [], true, false, false, true);</script><script data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_68254=" + new Date().getTime() + "|e36c3a3d-ab1a-4658-52c1-1cd382290435; " + expires, 3);
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Directorio de Empresas, Marcas Registradas, Comercio Exterior y Normas legales del Perú </title>
+<meta name="description" content="Directorio de Empresas por sector económico, Marcas Registradas por clase, Normas Legales del Perú y Comercio Exterior: Importaciones y Exportaciones por partida arancelaria">
+<meta name="copyright" content="Copyright © 2016 DatosPerú.org, All Rights Reserved - Todos los Derechos Reservados">
+<meta name="robots" content="index,follow">
+<meta name="geo.country" content="PE">
+<meta name="og:title" content="Directorio de Empresas, Marcas Registradas, Comercio Exterior y Normas legales del Perú ">
+<meta name="og:description" content="Directorio de Empresas por sector económico, Marcas Registradas por clase, Normas Legales del Perú y Comercio Exterior: Importaciones y Exportaciones por partida arancelaria">
+<meta name="og:url" content="https://www.datosperu.org/">
+<meta name="og:image" content="https://www.datosperu.org/img/logo.png">
+<meta name="og:type" content="website">
+<meta name="og:site_name" content="DatosPerú.org">
+<style type="text/css">.index-heading{background:url(./img/content/home-slider-img-two.jpg) top center no-repeat}.tab-content .publicidad{position:relative;margin-left:0;height:128px;width:100%}@media (max-width:768px){.tab-content .publicidad{height:200px;width:290px}}@media (max-width:480px){.tab-content .publicidad{height:200px;width:250px}}.publi-superior{position:relative;margin-top:45px;height:80px!important;width:100%}</style>
+<link rel="shortcut icon" href="favicon.ico">
+<!--[if IE 9]>
+    <script src="js/media.match.min.js"></script>
+  <![endif]-->
+<style type="text/css">.stick{position:fixed;bottom:0}</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-pagespeed-no-defer>(function(){function f(a,b,d){if(a.addEventListener)a.addEventListener(b,d,!1);else if(a.attachEvent)a.attachEvent("on"+b,d);else{var c=a["on"+b];a["on"+b]=function(){d.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var g=window.pagespeed;function k(a){this.g=[];this.f=0;this.h=!1;this.j=a;this.i=null;this.l=0;this.b=!1;this.a=0}function l(a,b){var d=b.getAttribute("data-pagespeed-lazy-position");if(d)return parseInt(d,0);var d=b.offsetTop,c=b.offsetParent;c&&(d+=l(a,c));d=Math.max(d,0);b.setAttribute("data-pagespeed-lazy-position",d);return d}
+function m(a,b){var d,c,e;if(!a.b&&(0==b.offsetHeight||0==b.offsetWidth))return!1;a:if(b.currentStyle)c=b.currentStyle.position;else{if(document.defaultView&&document.defaultView.getComputedStyle&&(c=document.defaultView.getComputedStyle(b,null))){c=c.getPropertyValue("position");break a}c=b.style&&b.style.position?b.style.position:""}if("relative"==c)return!0;e=0;"number"==typeof window.pageYOffset?e=window.pageYOffset:document.body&&document.body.scrollTop?e=document.body.scrollTop:document.documentElement&&
+document.documentElement.scrollTop&&(e=document.documentElement.scrollTop);d=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;c=e;e+=d;var h=b.getBoundingClientRect();h?(e=h.top-d,c=h.bottom):(h=l(a,b),d=h+b.offsetHeight,e=h-e,c=d-c);return e<=a.f&&0<=c+a.f}
+k.prototype.m=function(a){p(a);var b=this;window.setTimeout(function(){var d=a.getAttribute("data-pagespeed-lazy-src");if(d)if((b.h||m(b,a))&&-1!=a.src.indexOf(b.j)){var c=a.parentNode,e=a.nextSibling;c&&c.removeChild(a);a.c&&(a.getAttribute=a.c);a.removeAttribute("onload");a.tagName&&"IMG"==a.tagName&&g.CriticalImages&&f(a,"load",function(){g.CriticalImages.checkImageForCriticality(this);b.b&&(b.a--,b.a||g.CriticalImages.checkCriticalImages())});a.removeAttribute("data-pagespeed-lazy-src");a.removeAttribute("data-pagespeed-lazy-replaced-functions");
+c&&c.insertBefore(a,e);if(c=a.getAttribute("data-pagespeed-lazy-srcset"))a.srcset=c,a.removeAttribute("data-pagespeed-lazy-srcset");a.src=d}else b.g.push(a)},0)};k.prototype.loadIfVisibleAndMaybeBeacon=k.prototype.m;k.prototype.s=function(){this.h=!0;q(this)};k.prototype.loadAllImages=k.prototype.s;function q(a){var b=a.g,d=b.length;a.g=[];for(var c=0;c<d;++c)a.m(b[c])}function t(a,b){return a.a?null!=a.a(b):null!=a.getAttribute(b)}
+k.prototype.u=function(){for(var a=document.getElementsByTagName("img"),b=0,d;d=a[b];b++)t(d,"data-pagespeed-lazy-src")&&p(d)};k.prototype.overrideAttributeFunctions=k.prototype.u;function p(a){t(a,"data-pagespeed-lazy-replaced-functions")||(a.c=a.getAttribute,a.getAttribute=function(a){"src"==a.toLowerCase()&&t(this,"data-pagespeed-lazy-src")&&(a="data-pagespeed-lazy-src");return this.c(a)},a.setAttribute("data-pagespeed-lazy-replaced-functions","1"))}
+g.o=function(a,b){function d(){if(!(c.b&&a||c.i)){var b=200;200<(new Date).getTime()-c.l&&(b=0);c.i=window.setTimeout(function(){c.l=(new Date).getTime();q(c);c.i=null},b)}}var c=new k(b);g.lazyLoadImages=c;f(window,"load",function(){c.b=!0;c.h=a;c.f=200;if(g.CriticalImages){for(var b=0,d=document.getElementsByTagName("img"),r=0,n;n=d[r];r++)-1!=n.src.indexOf(c.j)&&t(n,"data-pagespeed-lazy-src")&&b++;c.a=b;c.a||g.CriticalImages.checkCriticalImages()}q(c)});b.indexOf("data")&&((new Image).src=b);f(window,
+"scroll",d);f(window,"resize",d)};g.lazyLoadInit=g.o;})();
+
+pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
+</script><style>.ezoic-ad.box-2 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px; }
+.ezoic-ad.box-3 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;text-align:center !important; }
+.ezoic-ad.medrectangle-3 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;text-align:center !important; }
+.ezoic-ad{display:inline-block;}
+.adtester-container-106{display:none !important}
+.adtester-container-129{display:none !important}
+.adtester-container-105{display:none !important}
+.adtester-container-132{display:none !important}
+.adtester-container-104{display:none !important}
+.adtester-container-123{display:none !important}
+.adtester-container-140{display:none !important}
+.adtester-container-127{display:none !important}
+.adtester-container-107{display:none !important}
+.adtester-container-118{display:none !important}
+.adtester-container-125{display:none !important}
+.adtester-container-115{display:none !important}
+.adtester-container-116{display:none !important}
+.adtester-container-108{display:none !important}
+.adtester-container-114{display:none !important}
+.adtester-container-124{display:none !important}
+.adtester-container-131{display:none !important}
+.adtester-container-130{display:none !important}
+.adtester-container-128{display:none !important}
+.adtester-container-100{display:none !important}
+.adtester-container-102{display:none !important}
+.adtester-container-111{display:none !important}
+.adtester-container-113{display:none !important}
+.adtester-container-120{display:none !important}
+.adtester-container-110{display:none !important}
+.adtester-container-112{display:none !important}
+.ezoic-floating-bottom { display: none!important; }</style><link rel='canonical' href='https://www.datosperu.org/' />
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-118274148-14";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-118274148-14']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'datosperu.org']);
+_gaq.push(['f._setDomainName', 'datosperu.org']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod21',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','datosperu.org',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1";</script><base href="https://www.datosperu.org/"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 68254;
+var ezdomain = 'datosperu.org';
+var ezoicSearchable = 1;
+</script>
+
+
+<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
+__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
+var __ez_ezosuigenerisEvt = function() { __ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); };
+__ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, false, ['__ezf_ezosuigeneris'], false, false, false, false);</script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, [], true, false, false, false);</script></head>
+<body>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,600,800%7COpen+Sans:400italic,400,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<div id="main-wrapper">
+<header id="header">
+<div class="header-top-bar">
+<div class="container">
+<div class="header-login ">
+<a href="https://www.datosperu.org"><img src="./img/logo.png" alt="Datos Perú"></a>
+</div>
+</div>
+</div>
+<div class="header-search fixed-height">
+<div class="header-search-bar">
+<form id="frm-buscador" action="#" method="get">
+<div class="search-toggle">
+<div class="container">
+<center><p id="mensaje-search"></p></center>
+</div>
+</div>
+<div class="container">
+<button class="toggle-btn" type="button"><i class="fa fa-bars"></i></button>
+<div class="search-value">
+<div class="keywords">
+<input type="text" class="form-control" id="buscar" name="buscar" placeholder="Keywords" value="">
+</div>
+<div class="category-search">
+<select class="" data-placeholder="Buscar en:" id="cbo_buscador">
+<option value="buscador_empresas.php">Empresas</option>
+<option value="buscador_marcas.php">Marcas</option>
+<option value="buscador_normas.php">El Peruano</option>
+<option value="buscador_comercio_exterior.php">Comercio Exterior</option>
+<option value="buscador_minas.php">Minas</option>
+<option value="buscador_medicinas.php">Medicinas</option>
+<option value="buscador_empleos.php">Empleos</option>
+</select>
+</div>
+<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+</div>
+</div>
+</form> </div>
+<div class="page-heading index-heading">
+<span></span>
+<div class="container">
+<br><br><br><br><br>
+<span>
+<span id="ezoic-pub-ad-placeholder-103"></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;' class='ezoic-ad box-2 adtester-container adtester-container-103' data-ez-name='datosperu_org-box-2'><span id='div-gpt-ad-datosperu_org-box-2-0' ezaw='970' ezah='90' style='position:relative;z-index:0;display:inline-block;min-height:90px;min-width:970px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[970,90],'datosperu_org-box-2','ezslot_1']));</script></span></span>
+</span>
+</div>
+</div>
+</div>
+<div class="header-nav-bar">
+<div class="container">
+<nav>
+<button><i class="fa fa-bars"></i></button>
+<ul class="primary-nav list-unstyled">
+<li class="bg-color"><a href="https://www.datosperu.org">Inicio</a></li>
+ <li><a href="quienes-somos.php">Quiénes Somos</a></li>
+<li><a href="twitter-feed.php">Twitter Feed</a></li>
+<li><a href="defiende.php">Defiende</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div id="page-content">
+<div class="container"><span id="ezoic-pub-ad-placeholder-109" class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;text-align:center !important;' class='ezoic-ad box-3 adtester-container adtester-container-109' data-ez-name='datosperu_org-box-3'><span id='div-gpt-ad-datosperu_org-box-3-0' ezaw='580' ezah='400' style='position:relative;z-index:0;display:inline-block;min-height:400px;min-width:580px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[580,400],'datosperu_org-box-3','ezslot_0']));</script></span></span>
+<div class="home-with-slide">
+<div class="row">
+<div class="col-md-9 col-md-push-3">
+<div class="page-content">
+<div class="product-details">
+<div class="tab-content to-lock-1">
+<div class="publicidad"><span id="ezoic-pub-ad-placeholder-125" class="ezoic-adpicker-ad"></span><br><br>
+</div><div class="tab-pane active" id="categorias"><h3>Empresas por Actividad <span class="comments">44</span></h3><span id="ezoic-pub-ad-placeholder-126" class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;text-align:center !important;' class='ezoic-ad medrectangle-3 adtester-container adtester-container-126' data-ez-name='datosperu_org-medrectangle-3'><span id='div-gpt-ad-datosperu_org-medrectangle-3-0' ezaw='728' ezah='90' style='position:relative;z-index:0;display:inline-block;min-height:90px;min-width:728px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[728,90],'datosperu_org-medrectangle-3','ezslot_2']));</script></span></span><div id="share"></div><br><div class="row clearfix">
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-actividades-academicas-y-de-ensenanza-14.php"><img data-pagespeed-lazy-src="iconos-web-mini/teacher35.png" height="39" width="39" alt="ACTIVIDADES ACADEMICAS Y DE ENSEÑANZA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ACTIVIDADES ACADEMICAS Y DE EN...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-actividades-agropecuarias-pesca-y-anexos-11.php"><img data-pagespeed-lazy-src="iconos-web-mini/tractor4.png" height="39" width="39" alt="ACTIVIDADES AGROPECUARIAS, PESCA Y ANEXOS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ACTIVIDADES AGROPECUARIAS, PES...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-aparatos-de-medicion-e-instrumental-26.php"><img data-pagespeed-lazy-src="iconos-web-mini/science.png" height="39" width="39" alt="APARATOS DE MEDICION E INSTRUMENTAL" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>APARATOS DE MEDICION E INSTRUM...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-aparatos-electricos-y-electronicos-42.php"><img data-pagespeed-lazy-src="iconos-web-mini/ray1.png" height="39" width="39" alt="APARATOS ELECTRICOS Y ELECTRONICOS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>APARATOS ELECTRICOS Y ELECTRON...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-aseguradoras-y-fondos-de-pensiones-33.php"><img data-pagespeed-lazy-src="iconos-web-mini/family26.png" height="39" width="39" alt="ASEGURADORAS Y FONDOS DE PENSIONES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ASEGURADORAS Y FONDOS DE PENSI...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-banca-y-actividades-financieras-3.php"><img data-pagespeed-lazy-src="iconos-web-mini/money187.png" height="39" width="39" alt="BANCA Y ACTIVIDADES FINANCIERAS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>BANCA Y ACTIVIDADES FINANCIERA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-basura-y-reciclaje-25.php"><img data-pagespeed-lazy-src="iconos-web-mini/hand192.png" height="39" width="39" alt="BASURA Y RECICLAJE" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>BASURA Y RECICLAJE...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-bebidas-16.php"><img data-pagespeed-lazy-src="iconos-web-mini/wine53.png" height="39" width="39" alt="BEBIDAS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>BEBIDAS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-cemento-hormigon-y-piedra-10.php"><img data-pagespeed-lazy-src="iconos-web-mini/concrete.png" height="39" width="39" alt="CEMENTO, HORMIGON Y PIEDRA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>CEMENTO, HORMIGON Y PIEDRA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-combustibles-18.php"><img data-pagespeed-lazy-src="iconos-web-mini/gasoline4.png" height="39" width="39" alt="COMBUSTIBLES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>COMBUSTIBLES...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-comercio-diverso-29.php"><img data-pagespeed-lazy-src="iconos-web-mini/shops.png" height="39" width="39" alt="COMERCIO DIVERSO" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>COMERCIO DIVERSO...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-comercio-en-alimentos-y-otros-31.php"><img data-pagespeed-lazy-src="iconos-web-mini/shopping166.png" height="39" width="39" alt="COMERCIO EN ALIMENTOS Y OTROS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>COMERCIO EN ALIMENTOS Y OTROS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-comunicacion-y-marketing-44.php"><img data-pagespeed-lazy-src="iconos-web-mini/businessmen.png" height="39" width="39" alt="COMUNICACION Y MARKETING" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>COMUNICACION Y MARKETING...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-construccion-conexos-y-servicios-inmobiliarios-6.php"><img data-pagespeed-lazy-src="iconos-web-mini/construction15.png" height="39" width="39" alt="CONSTRUCCION, CONEXOS Y SERVICIOS INMOBILIARIOS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>CONSTRUCCION, CONEXOS Y SERVIC...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-electrodomesticos-enseres-y-equipo-de-oficina-2.php"><img data-pagespeed-lazy-src="iconos-web-mini/vacuum6.png" height="39" width="39" alt="ELECTRODOMESTICOS, ENSERES Y EQUIPO DE OFICINA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ELECTRODOMESTICOS, ENSERES Y E...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-energia-electrica-y-vapor-39.php"><img data-pagespeed-lazy-src="iconos-web-mini/nuclear7.png" height="39" width="39" alt="ENERGIA ELECTRICA Y VAPOR" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ENERGIA ELECTRICA Y VAPOR...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-esparcimiento-y-hosteleria-28.php"><img data-pagespeed-lazy-src="iconos-web-mini/man61.png" height="39" width="39" alt="ESPARCIMIENTO Y HOSTELERIA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ESPARCIMIENTO Y HOSTELERIA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-extraccion-de-minerales-19.php"><img data-pagespeed-lazy-src="iconos-web-mini/mine2.png" height="39" width="39" alt="EXTRACCION DE MINERALES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>EXTRACCION DE MINERALES...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-fabricacion-diversa-32.php"><img data-pagespeed-lazy-src="iconos-web-mini/industrial2.png" height="39" width="39" alt="FABRICACION DIVERSA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>FABRICACION DIVERSA...</a>
+</div>
+</div>
+ <div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-impresiones-y-editorial-13.php"><img data-pagespeed-lazy-src="iconos-web-mini/triptych1.png" height="39" width="39" alt="IMPRESIONES  Y EDITORIAL" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>IMPRESIONES Y EDITORIAL...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-industria-alimentaria-15.php"><img data-pagespeed-lazy-src="iconos-web-mini/house157.png" height="39" width="39" alt="INDUSTRIA ALIMENTARIA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>INDUSTRIA ALIMENTARIA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-informatica-y-computacion-9.php"><img data-pagespeed-lazy-src="iconos-web-mini/man343.png" height="39" width="39" alt="INFORMATICA Y COMPUTACION" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>INFORMATICA Y COMPUTACION...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-juegos-deporte-y-musica-38.php"><img data-pagespeed-lazy-src="iconos-web-mini/yoga12.png" height="39" width="39" alt="JUEGOS, DEPORTE Y MUSICA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>JUEGOS, DEPORTE Y MUSICA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-madera-y-mobiliario-8.php"><img data-pagespeed-lazy-src="iconos-web-mini/hand194.png" height="39" width="39" alt="MADERA Y MOBILIARIO" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>MADERA Y MOBILIARIO...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-maquinaria-partes-y-herramientas-21.php"><img data-pagespeed-lazy-src="iconos-web-mini/worker8.png" height="39" width="39" alt="MAQUINARIA, PARTES Y HERRAMIENTAS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>MAQUINARIA, PARTES Y HERRAMIEN...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-medios-audiovisuales-43.php"><img data-pagespeed-lazy-src="iconos-web-mini/clapperboard2.png" height="39" width="39" alt="MEDIOS AUDIOVISUALES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>MEDIOS AUDIOVISUALES...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-metales-preciosos-y-joyas-37.php"><img data-pagespeed-lazy-src="iconos-web-mini/jewel5.png" height="39" width="39" alt="METALES PRECIOSOS Y JOYAS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>METALES PRECIOSOS Y JOYAS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-minerales-metales-y-productos-metalicos-27.php"><img data-pagespeed-lazy-src="iconos-web-mini/factory2.png" height="39" width="39" alt="MINERALES, METALES Y PRODUCTOS METALICOS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>MINERALES, METALES Y PRODUCTOS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-organizaciones-diversas-34.php"><img data-pagespeed-lazy-src="iconos-web-mini/male216.png" height="39" width="39" alt="ORGANIZACIONES DIVERSAS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>ORGANIZACIONES DIVERSAS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-otros-servicios-12.php"><img data-pagespeed-lazy-src="iconos-web-mini/hand178.png" height="39" width="39" alt="OTROS SERVICIOS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>OTROS SERVICIOS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-papel-carton-envases-y-empaques-23.php"><img data-pagespeed-lazy-src="iconos-web-mini/empty28.png" height="39" width="39" alt="PAPEL, CARTON, ENVASES Y EMPAQUES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>PAPEL, CARTON, ENVASES Y EMPAQ...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-piel-y-articulos-de-cuero-22.php"><img data-pagespeed-lazy-src="iconos-web-mini/cow4.png" height="39" width="39" alt="PIEL Y ARTICULOS DE CUERO" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>PIEL Y ARTICULOS DE CUERO...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-quimicos-plasticos-y-otros-35.php"><img data-pagespeed-lazy-src="iconos-web-mini/flask20.png" height="39" width="39" alt="QUIMICOS, PLASTICOS Y OTROS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>QUIMICOS, PLASTICOS Y OTROS...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-salud-aseo-y-belleza-24.php"><img data-pagespeed-lazy-src="iconos-web-mini/ambulance9.png" height="39" width="39" alt="SALUD, ASEO Y BELLEZA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>SALUD, ASEO Y BELLEZA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-servicios-legales-y-empresariales-5.php"><img data-pagespeed-lazy-src="iconos-web-mini/law2.png" height="39" width="39" alt="SERVICIOS LEGALES Y EMPRESARIALES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>SERVICIOS LEGALES Y EMPRESARIA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-servicios-publicos-y-actividades-estatales-4.php"><img data-pagespeed-lazy-src="iconos-web-mini/school72.png" height="39" width="39" alt="SERVICIOS PUBLICOS Y ACTIVIDADES ESTATALES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>SERVICIOS PUBLICOS Y ACTIVIDAD...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-tabaco-17.php"><img data-pagespeed-lazy-src="iconos-web-mini/smoke5.png" height="39" width="39" alt="TABACO" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>TABACO...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-textiles-1.php"><img data-pagespeed-lazy-src="iconos-web-mini/scissors70.png" height="39" width="39" alt="TEXTILES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>TEXTILES...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-transporte-acuatico-y-embarcaciones-41.php"><img data-pagespeed-lazy-src="iconos-web-mini/boat18.png" height="39" width="39" alt="TRANSPORTE ACUATICO Y EMBARCACIONES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>TRANSPORTE ACUATICO Y EMBARCAC...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-transporte-aereo-y-aviones-40.php"><img data-pagespeed-lazy-src="iconos-web-mini/airliner.png" height="39" width="39" alt="TRANSPORTE AEREO Y AVIONES" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>TRANSPORTE AEREO Y AVIONES...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-transporte-terrestre-30.php"><img data-pagespeed-lazy-src="iconos-web-mini/cargo2.png" height="39" width="39" alt="TRANSPORTE TERRESTRE" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>TRANSPORTE TERRESTRE...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-vehiculos-sus-partes-y-servicios-7.php"><img data-pagespeed-lazy-src="iconos-web-mini/car93.png" height="39" width="39" alt="VEHICULOS, SUS PARTES Y SERVICIOS" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>VEHICULOS, SUS PARTES Y SERVIC...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-vestimenta-20.php"><img data-pagespeed-lazy-src="iconos-web-mini/t-shirt7.png" height="39" width="39" alt="VESTIMENTA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>VESTIMENTA...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="category-item">
+<a href="categoria-vidrio-y-ceramica-36.php"><img data-pagespeed-lazy-src="iconos-web-mini/opened17.png" height="39" width="39" alt="VIDRIO Y CERAMICA" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"><br>VIDRIO Y CERAMICA...</a>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<span id="ezoic-pub-ad-placeholder-111" class="ezoic-adpicker-ad"></span></div>
+<div class="col-md-3 col-md-pull-9 category-toggle">
+<button><i class="fa fa-briefcase"></i></button>
+<div class="page-sidebar">
+<div id="categories">
+<div class="accordion">
+<ul class="nav nav-tabs home-tab" role="tablist">
+<li class="active">
+<a href="https://www.datosperu.org" role="tab" data-toggle="tab">Empresas
+<span>Por Actividad</span>
+</a>
+</li>
+<li>
+<a href="directorio-de-marcas-del-peru.php" role="tab" data-toggle="tab">Marcas
+<span>Por Clase</span>
+</a>
+</li>
+<li>
+<a href="directorio-de-normas-legales-del-peru.php" role="tab" data-toggle="tab">Normas Legales
+<span>Por Año</span>
+</a>
+</li>
+<li>
+<a href="directorio-de-comercio-exterior-del-peru.php" role="tab" data-toggle="tab">Comercio Exterior
+<span>Por Tipo</span>
+</a>
+</li>
+<li>
+<a href="directorio-de-medicinas-del-peru.php" role="tab" data-toggle="tab">Medicinas
+<span>Por Clasificación</span>
+</a>
+</li>
+<li>
+<a href="directorio-de-minas-del-peru.php" role="tab" data-toggle="tab">Minas
+<span>Por Departamento</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<span id="ezoic-pub-ad-placeholder-102"></span>
+
+<div id="pop_defiende">
+<div><a id="cbanner" style="cursor:pointer">[ x ]</a></div>
+<a href="defiende.php"> <img data-pagespeed-lazy-src="./img/defiende.png" alt="Mordaza o la plata" src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></a>
+</div>
+<div id="categories">
+<div class="accordion">
+<ul class="nav nav-tabs home-tab" role="tablist">
+<div id="actualizadas">
+<div class="accordion"><ul class="nav nav-tabs home-tab" role="tablist"><li class="active"><a href="#" role="tab" data-toggle="tab">Empresas Actualizadas</a><div><a href="empresa-fvj-servicios-generales-sac-20602405126.php" role="tab">FVJ SERVICIOS GENERALES S.A.C</a><a href="empresa-restaurants-tono-y-veronica-srl-20602405185.php" role="tab">RESTAURANT'S TOÑO Y VERONICA S.R.L</a><a href="empresa-coop-pesq-de-trabaj-pescad-artesanales-y-extract-de-mariscos-beatita-melchorita-de-san-andres-20602405754.php" role="tab">COOP. PESQ. DE TRABAJ. PESCAD. ARTESANALES Y EXTRACT. DE MARISCOS BEATITA MELCHORITA DE SAN ANDRES</a><a href="empresa-organizacion-no-gubernamental-agroindustria-humanpuquio-20602405886.php" role="tab">ORGANIZACION NO GUBERNAMENTAL AGROINDUSTRIA HUMANPUQUIO</a><a href="empresa-er-proyectos-ingenieria-y-servicios-eirl-20602402470.php" role="tab">ER PROYECTOS INGENIERIA Y SERVICIOS E.I.R.L</a><a href="empresa-jehova-es-mi-refugio-sac-20602402852.php" role="tab">JEHOVA ES MI REFUGIO S.A.C</a><a href="empresa-raaba-contratistas-generales-eirl-20602402895.php" role="tab">RAABA CONTRATISTAS GENERALES E.I.R.L</a><a href="empresa-alejatextil-srl-20602403425.php" role="tab">ALEJATEXTIL S.R.L</a><a href="empresa-chacon-minaya-eirl-20602405606.php" role="tab">CHACON &amp; MINAYA E.I.R.L</a><a href="empresa-anper-multiservicios-eirl-20602405550.php" role="tab">ANPER MULTISERVICIOS E.I.R.L</a><a href="empresa-asociacion-las-flores-del-oro-verde-del-sector-quinual-del-centro-poblado-chuyugual-distrito-20602405525.php" role="tab">ASOCIACION LAS FLORES DEL ORO VERDE DEL SECTOR QUINUAL DEL CENTRO POBLADO CHUYUGUAL DISTRITO</a><a href="empresa-distribuidora-bremensur-empresa-individual-de-responsabilidad-limitada-20602403514.php" role="tab">DISTRIBUIDORA BREMENSUR EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA</a><a href="empresa-dermika-servicios-generales-sac-20602402542.php" role="tab">DERMIKA SERVICIOS GENERALES S.A.C</a><a href="empresa-centro-de-diagnostico-por-imagenes-del-norte-sac-20602402674.php" role="tab">CENTRO DE DIAGNOSTICO POR IMAGENES DEL NORTE S.A.C</a><a href="empresa-transportes-ali-y-eli-sac-20602402992.php" role="tab">TRANSPORTES ALI Y ELI S.A.C</a><a href="empresa-inversiones-holguin-sac-20602404006.php" role="tab">INVERSIONES HOLGUIN S.A.C</a><a href="empresa-nexxsus-co-sac-20602404120.php" role="tab">NEXXSUS &amp; CO S.A.C</a><a href="empresa-prosolintec-eirl-20602404359.php" role="tab">PROSOLINTEC E.I.R.L</a><a href="empresa-minserv-peru-sac-20602404375.php" role="tab">MINSERV PERU S.A.C</a><a href="empresa-dc-yulisa-sac-20602404456.php" role="tab">DC YULISA S.A.C</a></div></li></ul></div> </div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id="footer">
+<div class="copyright">
+<div class="container">
+<p>Copyright 2016 - 2018 © DatosPeru.org - Todos los derechos reservados</p>
+<ul class="list-inline">
+<li><a href="https://www.datosperu.org">Inicio</a></li>
+<li><a href="quienes-somos.php">Quiénes Somos</a></li>
+<li><a href="twitter-feed.php">Twitter Feed</a></li>
+<li><a href="contactenos.php">Contáctanos</a></li>
+<li><a href="atribuciones.php">Atribuciones</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9PMPR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript" data-pagespeed-no-defer>pagespeed.lazyLoadImages.overrideAttributeFunctions();</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9PMPR');</script>
+
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<script src="js/jquery.ba-outside-events.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.browser.min.js"></script>
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.gplusone.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/box_mensaje.js"></script>
+<script type="text/javascript">$("#share").jsSocials({showLabel:true,showCount:false,shares:["email","twitter","facebook","googleplus","linkedin","pinterest","stumbleupon","whatsapp"]});function listarac(){setInterval(function(){var valores='';$.ajax({url:"lista_actualizadas.php",type:"POST",data:valores,success:function(data){$("#actualizadas").html(data);}});},10000);}listarac();</script>
+<div class="gpOverlay" id="gpOverlay" style="display:none"></div>
+<div class="gpBox" id="gpBox"> <a class="gpBoxclose" id="gpBoxclose"></a>
+<h1>Para continuar, por favor recomiéndanos con <span>Google+</span></h1>
+<p id="gpone"> </p>
+</div>
+<script type="text/javascript" style='display:none;'>
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '//www.datosperu.org/detroitchicago/edmonton.webp?a=a&cb=178-0&shcb=31', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '//www.datosperu.org/porpoiseant/jellyfish.webp?a=a&cb=178-0&shcb=31', false, [], true, false, false, false);
+</script>
+<script type="text/javascript">
+		(function(f,a){function g(b,a,c){b.addEventListener?b.addEventListener(a,c):b.attachEvent("on"+a,function(){c.call(b)})}function k(b){b&&("string"==typeof b["class"]&&b["class"]&&a.getElementById("uglipop_popbox").setAttribute("class",b["class"]),b.keepLayout&&!b["class"]&&a.getElementById("uglipop_popbox").setAttribute("style","position:relative;height:300px;width:300px;background-color:white;opacity:1;"),"string"==typeof b.content&&b.content&&"html"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=b.content),"string"==typeof b.content&&b.content&&"div"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=a.getElementById(b.content).innerHTML));a.getElementById("uglipop_overlay_wrapper").style.display="";a.getElementById("uglipop_overlay").style.display="";a.getElementById("uglipop_content_fixed").style.display=""}function h(){a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none"}g(a,"DOMContentLoaded",function(){var b=a.createElement("div"),e=a.createElement("div"),c=a.createElement("div"),d=a.createElement("div");e.id="uglipop_content_fixed";e.setAttribute("style","position:fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);opacity:1;z-index:10000000;");c.id="uglipop_popbox";d.id="uglipop_overlay_wrapper";d.setAttribute("style","position:absolute;top:0;bottom:0;left:0;right:0;");b.id="uglipop_overlay";b.setAttribute("style","position:fixed;top:0;bottom:0;left:0;right:0;opacity:0.3;width:100%;height:100%;background-color:black;");d.appendChild(b);e.appendChild(c);a.body.appendChild(d);a.body.appendChild(e);a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none";d.addEventListener("click",h);g(f,"keydown",function(a){27==a.keyCode&&h()});f.uglipop=k})})(window,document);
+			var ezRBA = (function() {
+			  function init() {
+				var reportAdsBtns = document.querySelectorAll('#ez-report-ad-button');
+				for (let i = 0; i < reportAdsBtns.length; i++) {
+				  reportAdsBtns[i].addEventListener('click', function(e) {
+					var url = '<iframe src="https://ezoic.com/pub/reportads.html' + e.target.getAttribute('name') + '" width="400" height="500" style="border-radius: 10px; box-shadow: 2px 2px 30px 6px rgba(0,0,0,0.75); border: 1px solid black;"></iframe>'
+					uglipop({
+					  class: 'none',
+					  source: 'html',
+					  content: url,
+					});
+				  });
+				}
+				function bindEvent(element, eventName, eventHandler) {
+					if (element.addEventListener) {
+						element.addEventListener(eventName, eventHandler, false);
+					} else if (element.attachEvent) {
+						element.attachEvent('on' + eventName, eventHandler);
+					}
+				}
+				bindEvent(window, 'message', function(e) {
+					if (e.data === 'close-report-ad-modal') {
+						document.getElementById('uglipop_overlay_wrapper').style.display = 'none';	
+						document.getElementById('uglipop_overlay').style.display = 'none';	
+						document.getElementById('uglipop_content_fixed').style.display = 'none';	
+					}
+				})
+			  }
+
+			  return {
+				init: init
+			  };
+			})();
+			ezRBA.init();
+		</script>
+<div id='dmo1' style='display:none'>
+<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-6396844742497208";
+		/* dmo */
+		google_ad_slot = "dmo";
+		google_ad_width = 88;
+		google_ad_height = 31;
+		//-->
+	</script>
+<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+<script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+<script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.datosperu_org,DomainId.68254"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.datosperu_org,DomainId.68254"border="0"height="1"width="1"alt="Quantcast"/></div></noscript></body></html>
